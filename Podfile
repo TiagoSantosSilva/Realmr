@@ -9,6 +9,6 @@ target 'Realmr' do
 
   # Pods for Realmr
   pod 'Firebase'
+  pod 'RealmSwift'
   
-
 end
