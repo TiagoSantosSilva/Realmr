@@ -40,7 +40,8 @@ class TableViewController: UITableViewController {
     }
     
     func reloadData() {
-        users = uiRealm.objects(User.self)
+        let ageMinimum = 20
+        users = uiRealm.objects(User.self).sorted(byKeyPath: "age", ascending: true).filter("age > %@", ageMinimum)
         self.tableView.reloadData()
     }
 }
