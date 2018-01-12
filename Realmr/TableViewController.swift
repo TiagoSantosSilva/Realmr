@@ -18,11 +18,6 @@ class TableViewController: UITableViewController {
         grabDataFromFirebase()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        animateTable()
-    }
-    
     func grabDataFromFirebase() {
         let databaseReference = Database.database().reference()
         databaseReference.child("users").observe(.value) {
