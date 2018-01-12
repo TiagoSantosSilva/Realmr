@@ -18,7 +18,7 @@ class TableViewController: UITableViewController {
     
     func grabDataFromFirebase() {
         let databaseReference = Database.database().reference()
-        databaseReference.child("Users").observe(.value) {
+        databaseReference.child("users").observe(.value) {
             snapshot in
             
             for snap in snapshot.children.allObjects as! [DataSnapshot] {
