@@ -14,6 +14,7 @@
 		277F79F12008342D007AC302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F79F02008342D007AC302 /* Assets.xcassets */; };
 		277F79F42008342D007AC302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F79F22008342D007AC302 /* LaunchScreen.storyboard */; };
 		277F79FC20083605007AC302 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 277F79FB20083605007AC302 /* GoogleService-Info.plist */; };
+		277F79FE200839CC007AC302 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F79FD200839CC007AC302 /* RealmObjects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		277F79F32008342D007AC302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		277F79F52008342D007AC302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277F79FB20083605007AC302 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		277F79FD200839CC007AC302 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 		5AEF99CBCBC467DD46BF948A /* Pods-Realmr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realmr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Realmr/Pods-Realmr.debug.xcconfig"; sourceTree = "<group>"; };
 		94B189D35D9914245285D8B1 /* Pods-Realmr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realmr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Realmr/Pods-Realmr.release.xcconfig"; sourceTree = "<group>"; };
 		C952131C9475C65FC391E773 /* Pods_Realmr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realmr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,7 @@
 				277F79F02008342D007AC302 /* Assets.xcassets */,
 				277F79F22008342D007AC302 /* LaunchScreen.storyboard */,
 				277F79F52008342D007AC302 /* Info.plist */,
+				277F79FD200839CC007AC302 /* RealmObjects.swift */,
 			);
 			path = Realmr;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277F79FE200839CC007AC302 /* RealmObjects.swift in Sources */,
 				277F79EC2008342D007AC302 /* TableViewController.swift in Sources */,
 				277F79EA2008342D007AC302 /* AppDelegate.swift in Sources */,
 			);
