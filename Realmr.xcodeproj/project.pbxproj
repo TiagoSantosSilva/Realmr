@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		04BA9EBCF7596720F220E600 /* Pods_Realmr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C952131C9475C65FC391E773 /* Pods_Realmr.framework */; };
 		277F79EA2008342D007AC302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F79E92008342D007AC302 /* AppDelegate.swift */; };
-		277F79EC2008342D007AC302 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F79EB2008342D007AC302 /* ViewController.swift */; };
+		277F79EC2008342D007AC302 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F79EB2008342D007AC302 /* TableViewController.swift */; };
 		277F79EF2008342D007AC302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F79ED2008342D007AC302 /* Main.storyboard */; };
 		277F79F12008342D007AC302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F79F02008342D007AC302 /* Assets.xcassets */; };
 		277F79F42008342D007AC302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F79F22008342D007AC302 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		277F79E62008342D007AC302 /* Realmr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Realmr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F79E92008342D007AC302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		277F79EB2008342D007AC302 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		277F79EB2008342D007AC302 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		277F79EE2008342D007AC302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		277F79F02008342D007AC302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277F79F32008342D007AC302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 			children = (
 				277F79FB20083605007AC302 /* GoogleService-Info.plist */,
 				277F79E92008342D007AC302 /* AppDelegate.swift */,
-				277F79EB2008342D007AC302 /* ViewController.swift */,
+				277F79EB2008342D007AC302 /* TableViewController.swift */,
 				277F79ED2008342D007AC302 /* Main.storyboard */,
 				277F79F02008342D007AC302 /* Assets.xcassets */,
 				277F79F22008342D007AC302 /* LaunchScreen.storyboard */,
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277F79EC2008342D007AC302 /* ViewController.swift in Sources */,
+				277F79EC2008342D007AC302 /* TableViewController.swift in Sources */,
 				277F79EA2008342D007AC302 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
