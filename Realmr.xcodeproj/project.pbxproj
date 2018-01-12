@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BA9EBCF7596720F220E600 /* Pods_Realmr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C952131C9475C65FC391E773 /* Pods_Realmr.framework */; };
 		277F79EA2008342D007AC302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F79E92008342D007AC302 /* AppDelegate.swift */; };
 		277F79EC2008342D007AC302 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F79EB2008342D007AC302 /* ViewController.swift */; };
 		277F79EF2008342D007AC302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F79ED2008342D007AC302 /* Main.storyboard */; };
 		277F79F12008342D007AC302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F79F02008342D007AC302 /* Assets.xcassets */; };
 		277F79F42008342D007AC302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F79F22008342D007AC302 /* LaunchScreen.storyboard */; };
+		277F79FC20083605007AC302 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 277F79FB20083605007AC302 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		277F79F02008342D007AC302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277F79F32008342D007AC302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		277F79F52008342D007AC302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277F79FB20083605007AC302 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5AEF99CBCBC467DD46BF948A /* Pods-Realmr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realmr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Realmr/Pods-Realmr.debug.xcconfig"; sourceTree = "<group>"; };
+		94B189D35D9914245285D8B1 /* Pods-Realmr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realmr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Realmr/Pods-Realmr.release.xcconfig"; sourceTree = "<group>"; };
+		C952131C9475C65FC391E773 /* Pods_Realmr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Realmr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BA9EBCF7596720F220E600 /* Pods_Realmr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				277F79E82008342D007AC302 /* Realmr */,
 				277F79E72008342D007AC302 /* Products */,
+				E6CC533663013BF7E69AB4AE /* Pods */,
+				F8AD36203D7B43C23F434D31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		277F79E82008342D007AC302 /* Realmr */ = {
 			isa = PBXGroup;
 			children = (
+				277F79FB20083605007AC302 /* GoogleService-Info.plist */,
 				277F79E92008342D007AC302 /* AppDelegate.swift */,
 				277F79EB2008342D007AC302 /* ViewController.swift */,
 				277F79ED2008342D007AC302 /* Main.storyboard */,
@@ -64,6 +74,23 @@
 			path = Realmr;
 			sourceTree = "<group>";
 		};
+		E6CC533663013BF7E69AB4AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AEF99CBCBC467DD46BF948A /* Pods-Realmr.debug.xcconfig */,
+				94B189D35D9914245285D8B1 /* Pods-Realmr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8AD36203D7B43C23F434D31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C952131C9475C65FC391E773 /* Pods_Realmr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 277F79F82008342D007AC302 /* Build configuration list for PBXNativeTarget "Realmr" */;
 			buildPhases = (
+				7F9CF38C7DBFA7AD31360D7C /* [CP] Check Pods Manifest.lock */,
 				277F79E22008342D007AC302 /* Sources */,
 				277F79E32008342D007AC302 /* Frameworks */,
 				277F79E42008342D007AC302 /* Resources */,
+				9B82186462C98865EB96DDBC /* [CP] Embed Pods Frameworks */,
+				902ACE219338EE2758A4146C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				277F79F42008342D007AC302 /* LaunchScreen.storyboard in Resources */,
+				277F79FC20083605007AC302 /* GoogleService-Info.plist in Resources */,
 				277F79F12008342D007AC302 /* Assets.xcassets in Resources */,
 				277F79EF2008342D007AC302 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F9CF38C7DBFA7AD31360D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		902ACE219338EE2758A4146C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Realmr/Pods-Realmr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B82186462C98865EB96DDBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Realmr/Pods-Realmr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		277F79E22008342D007AC302 /* Sources */ = {
@@ -272,6 +351,7 @@
 		};
 		277F79F92008342D007AC302 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AEF99CBCBC467DD46BF948A /* Pods-Realmr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +367,7 @@
 		};
 		277F79FA2008342D007AC302 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B189D35D9914245285D8B1 /* Pods-Realmr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
