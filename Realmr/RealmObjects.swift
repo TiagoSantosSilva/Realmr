@@ -13,12 +13,15 @@ class User: Object {
     @objc dynamic var name: String? = nil
     var age = RealmOptional<Int>()
     
+    override static func primaryKey() -> String? {
+        return "name"
+    }
 }
 
 extension User {
     func writeToRealm() {
         try! uiRealm.write {
-            uiRealm.add(self)
+            uiRealm.add(self, update: true)
         }
     }
 }
