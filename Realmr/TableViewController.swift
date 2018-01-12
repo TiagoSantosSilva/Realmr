@@ -18,6 +18,11 @@ class TableViewController: UITableViewController {
         grabDataFromFirebase()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        animateTable()
+    }
+    
     func grabDataFromFirebase() {
         let databaseReference = Database.database().reference()
         databaseReference.child("users").observe(.value) {
@@ -42,7 +47,8 @@ class TableViewController: UITableViewController {
     func reloadData() {
         let ageMinimum = 20
         users = uiRealm.objects(User.self).sorted(byKeyPath: "age", ascending: true).filter("age > %@", ageMinimum)
-        self.tableView.reloadData()
+        // self.tableView.reloadData()
+        self.animateTable()
     }
 }
 
@@ -63,6 +69,28 @@ extension TableViewController {
         cell.textLabel?.text = users[indexPath.row].name
         cell.detailTextLabel?.text = String(describing: userAge)
         return cell
+    }
+}
+
+extension TableViewController {
+    func animateTable() {
+        tableView.reloadData()
+        let cells = tableView.visibleCells
+        
+        let tableViewHeight = tableView.bounds.size.height
+        
+        for cell in cells {
+            cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
+        }
+        
+        var delayCounter = 0
+        
+        for cell in cells {
+            UIView.animate(withDuration: 1.75, delay: Double(delayCounter) * 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+                cell.transform = CGAffineTransform.identity
+            }, completion: nil)
+            delayCounter += 1
+        }
     }
 }
 
